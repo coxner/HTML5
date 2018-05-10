@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML5</title>
+    <link rel="stylesheet" href="improvedLayout.css">
+    <script>
+        function CloseBox() {
+            document.getElementById("FatFooter").style.display = "none";
+        }
+    </script>
+</head>
+
+<body>
+    <header class="SiteHeader">
+        <img src="HTML5.png" alt="HTML5 Logo">
+        <h1 style="display:none">HTML5 Use of Tags</h1>
+    </header>
+    <!--Code for Sidebar-->
+    <aside class="NavSidebar">
+        <nav>
+            <h2>I am a sidebar</h2>
+            <ul>
+                <li>
+                    <a href="#">Link 1</a>
+                </li>
+                <li>
+                    <a href="#">Link 2</a>
+                </li>
+                <li>
+                    <a href="#">Link 3</a>
+                </li>
+                <li>
+                    <a href="#">Link 3</a>
+                </li>
+                <li>
+                    <a href="#">Link 4</a>
+                </li>
+                <li>
+                    <a href="#">Link 5</a>
+                </li>
+            </ul>
+        </nav>
+        <section>
+            <h2>Section of the sidebar</h2>
+            <p>Check out the &lt;section&gt; tag nested within the sidebar! Pretty cool hey!
+            </p>
+            <img src="Html5.png" alt="HTML5 Logo">
+        </section>
+    </aside>
+
+    <!-- Article tag in use-->
+    <article class="Content">
+        <header class="ArticleHeader">
+            <hgroup>
+                <h2>This is the Structure of a HTML5 Document</h2>
+                <h3>I am a sub header! Notice the &lt;hgroup&gt; tag that surrounds me</h3>
+            </hgroup>
+        </header>
+
+        <p>
+            <span class="LeadIn">Right now</span>, you're probably feeling pretty good. After all, life in the developed world is comfortable
+            <span class="style1">—</span>probably more comfortable than it's been for the average human being throughout all of recorded history.
+        </p>
+
+        <!-- Figure and Figcaption in Use-->
+        <figure class="FloatFigure">
+            <img src="Html5.png" alt="HTML5 Logo" />
+            <figcaption>I am created using the &lt;figcaption&gt; tag try me out!</figcaption>
+        </figure>
+
+
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam et accusantium aliquam quaerat voluptatibus ad tempora
+            quasi, facere, provident rem deleniti vero consequatur, molestias commodi ipsum sit recusandae. Labore, autem!
+        </p>
+
+        <h3>Sub Header</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ad maiores minus itaque autem molestias tempora architecto
+            nam veritatis, ipsum unde perferendis, dolore repellendus voluptas quod sequi id iusto beatae.Eos eaque error
+            maiores ipsum cupiditate nihil atque harum molestiae est deserunt tenetur delectus inventore officia corrupti
+            facilis adipisci doloremque eligendi vel, ex unde iusto aliquid sit. Totam, quo molestias.
+        </p>
+
+        <h3>Sub Header</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, odio enim molestias cumque in obcaecati deserunt
+            esse. Deserunt, tempora asperiores possimus, a dicta sit aliquam ratione vitae illo quo voluptatum.Ratione est
+            repudiandae, obcaecati voluptates quas perferendis. Sit placeat, doloribus nihil quod rem quia assumenda magni
+            quisquam at officia, aliquid, eaque repudiandae similique? Fugit consectetur fuga voluptate unde optio iure!
+        </p>
+        <!--Pull quote created with Aside-->
+        <aside class="PullQuote">
+            "I am a PullQuote created with a &lt;aside&gt; tag. Check out this CSS that makes me work"
+        </aside>
+
+        <h3>Sub Header</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque modi blanditiis et error id iure cum eos adipisci
+            autem quaerat assumenda quibusdam facere a dolore, delectus maiores, vel similique? Perferendis?</p>
+
+        <h3>Sub Header</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa minima natus, illo impedit ea magni error ipsum porro
+            debitis? Placeat dolore rem aliquam! Ipsam deleniti eveniet ipsa voluptates excepturi quos?.</p>
+
+        <h3>Sub Header</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus iure omnis aut maxime itaque repellendus mollitia
+            praesentium atque rerum numquam facere expedita dicta distinctio, molestias dolore corrupti quas harum inventore.Officia
+            blanditiis eum reprehenderit vel sapiente, amet possimus enim dolores facere maxime id officiis cupiditate necessitatibus,
+            voluptatem veritatis voluptas rerum aliquam labore aliquid! Veritatis quasi deleniti consequuntur libero debitis
+            odit.
+        </p>
+
+    </article>
+    <!-- Code for the footer-->
+    <div id="FatFooter">
+        <aside>
+            <img onclick="CloseBox()" src="close_icon.png" class="CloseButton">
+            <div class="FloatBox">
+                <img src="Html5.png">
+            </div>
+            <div class="FloatBox" style="width:75px">
+                I am a fixed FatFooter when you click the X I disappear
+            </div>
+        </aside>
+        <footer>
+            <p>The views expessed on this site do not reflect actual reality. &nbsp; &bull; &nbsp; Copyright © 2011 &nbsp; &bull;
+                &nbsp;
+                <a href="AboutUs.html">About Us</a>
+                <a href="Disclaimer.html">Disclaimer</a>
+                <a href="ContactUs.html">Contact Us</a>
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>
