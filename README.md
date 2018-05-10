@@ -4,10 +4,10 @@ This repository is made to represent what I have learn while reading through [HT
 
 ## Resources
 
-Browser Support: [Here](https://caniuse.com/)
-Browser Statistics: [Here](http://gs.statcounter.com/)
-Feature Support: [Here](https://modernizr.com/)
-Web Accessibility Initiative: [Here](https://www.w3.org/WAI/)
+Browser Support: [Here](https://caniuse.com/)  
+Browser Statistics: [Here](http://gs.statcounter.com/)  
+Feature Support: [Here](https://modernizr.com/)  
+Web Accessibility Initiative: [Here](https://www.w3.org/WAI/)  
 HTML5 Outliner: [Here](https://gsnedders.html5.org/outliner/)
 
 The `<big>` element has been discarded in HTML5 however the `<small>` tag is still used and has been adapted to represent small print. Example: small writing on the bottom of a contract.
