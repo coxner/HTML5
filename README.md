@@ -9,6 +9,7 @@ Browser Statistics: [Here](http://gs.statcounter.com/)
 Feature Support: [Here](https://modernizr.com/)  
 Web Accessibility Initiative: [Here](https://www.w3.org/WAI/)  
 HTML5 Outliner: [Here](https://gsnedders.html5.org/outliner/)
+Landmark Roles: [Here](https://www.w3.org/TR/2017/NOTE-wai-aria-practices-1.1-20171214/examples/landmarks/index.html)
 
 The `<big>` element has been discarded in HTML5 however the `<small>` tag is still used and has been adapted to represent small print. Example: small writing on the bottom of a contract.
 
@@ -46,15 +47,15 @@ Your website should only contain **1 `<h1>` tag**. It makes your site more acces
 
 #### The &gt;time&lt; tag
 
-The &gt;time&lt; tag is extremely useful because it allows programs like search engines to extract data from your website. It has two uses to provide you where a date/time is being used in your markup and provides a easy way for programs to extract date/time values from your markup.
+The `<time>` tag is extremely useful because it allows programs like search engines to extract data from your website. It has two uses to provide you where a date/time is being used in your markup and provides a easy way for programs to extract date/time values from your markup.
 
 An example of time is use is `<time>2018-06-25</time>`. However say we want to display a date to our user in a different format but keep our site compaitable with search engines. That is where the datetime attribute comes into play. Now we can present a date to our user like `<time datetime="2018-06-25">June 25 <sup>th</sup></time>`. Lastly you can specify a time with a date by following this markup `<time datetime="2018-06-25T12:30">June 25<sup>th</sup> at 12:30</time>` by putting a T at the end of our date followed by the time of the event you can see it is fairly simple to specify a time with a date. There is another attribute that is useable with time and that is the pubdate attribute.
 
-#### The &gt;output&lt; tag
+#### The &lt;output&gt; tag
 
 Another sematic tag that has been added is the `<output>` tag. It primarily a placeholder that your markup can use to hold a piece of caculated information. This can be seen in _BmiCalculator.html_ where the output tag is wrapped around the result returned to the user. There are two other attributes you can provide the output tag that have no effect on the results but just provide additional information on where the output tag is getting its information from. The form attribute indicates the form that controls the output tag and the for attribute list the ids used to perform the calcualtions.
 
-#### The &gt;mark&lt; tag
+#### The &lt;mark&gt; tag
 
 The final tag will be looking at is the `<mark>` tag. The mark tag is used to highlight a section of text and is primarily used when quoting someone else or you want to bring attention to a section of text. By default the background color of the mark tag is a highlighter yellow. You can see in the code example _Mark.html_ how we could change the highlight color if we wanted to.
 
@@ -64,3 +65,7 @@ If you use the `<mark>` tag in your markup you should provide this simple fallba
  `background-color: yellow;`  
  `color:black;`  
 `}`
+
+## ARIA (Accessible Rich Internet Applications)
+
+Aria is known as a dev standard that allows devlopers to provide information in their markup for screen readers. It is most commonly done through the role attribute which defines what a elements purpose is. For more information on how to assign roles within your webpage [click here](https://www.w3.org/TR/2017/NOTE-wai-aria-practices-1.1-20171214/examples/landmarks/index.html)
