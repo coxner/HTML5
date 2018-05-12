@@ -10,6 +10,12 @@ Feature Support: [Here](https://modernizr.com/)
 Web Accessibility Initiative: [Here](https://www.w3.org/WAI/)  
 HTML5 Outliner: [Here](https://gsnedders.html5.org/outliner/)
 Landmark Roles: [Here](https://www.w3.org/TR/2017/NOTE-wai-aria-practices-1.1-20171214/examples/landmarks/index.html)
+Microformatting: [Here](http://microformats.org/wiki/what-are-microformats)
+hCard Microformatting: [Here](http://microformats.org/wiki/hcard)
+hCalendar Formatting: [Here](http://microformats.org/wiki/hcalendar)
+Microdata: [Here](https://www.w3.org/TR/microdata/)
+Microdata itemtype: [Here](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/itemtype)
+Microdata itemprop: [Here](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/itemprop)
 
 The `<big>` element has been discarded in HTML5 however the `<small>` tag is still used and has been adapted to represent small print. Example: small writing on the bottom of a contract.
 
@@ -69,3 +75,25 @@ If you use the `<mark>` tag in your markup you should provide this simple fallba
 ## ARIA (Accessible Rich Internet Applications)
 
 Aria is known as a dev standard that allows devlopers to provide information in their markup for screen readers. It is most commonly done through the role attribute which defines what a elements purpose is. For more information on how to assign roles within your webpage [click here](https://www.w3.org/TR/2017/NOTE-wai-aria-practices-1.1-20171214/examples/landmarks/index.html)
+
+## Annotating HTML5 Sematic Elements
+
+What is sematic content?
+
+### Microformatting
+
+Microformatting is a simple way that you include meta data within your webpage. It is commonly used to HTML patterns for things like people, blog post and events. They are a way you can provide. It allows programs to extract information from your webpage that is marked up with microformats. You can read more [here](http://microformats.org/wiki/what-are-microformats)
+
+Contact details are represented on a website with hCard. Microformats work off of the class attribute which is commonly used for styling. Depending on the data your are marking up their is a set standard on how you should name classes so data can be extracted. **To create a hcard you need a base element thats class attribute is vCard. Within the hcard you need a formatted name, the name must have the class of fn**. These are the two main attributes needed for a hCard however you can add more. Check out _hcard.html_ to checkout how to style contact details. Check out this [link](http://microformats.org/wiki/hcard) on hCard formatting.
+
+_Useful tip:_ When writing hcard markup wrap block level elements in `<div>` tags and inline elements in `<span>` tags. Use `<br>` to shift from one `<span>` line to another. This is also represented in the _hcard.html_ file.
+
+_Useful tip:_ You can add the CSS style `display:none` to any element of the markup if you want it to be represented in the microformatting but not displayed on the site.
+
+Another microformat is hCalendar which is used for providing metadata to events. Similar to the hCard element we start with assigning the class name vevent to our base element. Inside you vevent element two classes must be present dstart to represent the start date and summary to represent the description. More information on hCalendar can be found [here](http://microformats.org/wiki/hcalendar).
+
+### Microdata
+
+Another common method used to annotate sematic tags is microdata. The major difference between the two is microdata introduces new attributes into markup and does not use class attributes like microformatiing does. More information [here](https://www.w3.org/TR/microdata/)
+
+When starting a new sematic area on content with microdata the first attribute that must be used is `itemscope` which declares that you are creating a sematic section of code. The second attribute that must be used is `itemtype` which specifys the type of data being encoded. It is a unique attribute that must contain the url of the vocabulary that is being used to define the `itemprop`. More can be read [here](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/itemtype).The final attribute needed is known as `itemprop`. This is where the important information of your sematic code is stored. I would write my own markup to represent the structure of microdata but feel as if a better example can be found [here](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/itemprop).
