@@ -41,7 +41,8 @@ Check out the use of the `<detail>` and `<summary>` tag. When the heading is cod
 
 In the _improvedLayout.html_ file you will see the new way pages are marked up using HTML5. The `<article>` tag is used to wrap around a whole piece of content. This content can be something like a news story or a blog post. If one of your post contains a header and a sub header you can wrap the both of them within a `<hgroup>`. A `<figure>` element refers to a image that is **separate** from the text but referred to within the text. The `<aside>` tag is a great way to create sidebars as you can see in the coding example. The `<header>` tag has **two** uses you can use it to title your webpage or you can use it to title some content.
 
-###Useful tips
+### Useful tips
+
 Adding `<header>` tags as titles to content helps people navigate your site who are using screen readers.
 Your website should only contain **1 `<h1>` tag**. It makes your site more accessible to screen readers. The level 1 heading is made to be unique and should clearly tell the search engine what the content of your site holds. The popularity of using more then one h1 tag to mark different sections of a site is growing. A `<section>` tag is more specific then a `<div>` tag and is intended to be used with any block of content that starts with a heading.
 
