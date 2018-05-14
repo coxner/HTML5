@@ -16,6 +16,9 @@ hCalendar Formatting: [Here](http://microformats.org/wiki/hcalendar)
 Microdata: [Here](https://www.w3.org/TR/microdata/)
 Microdata itemtype: [Here](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/itemtype)
 Microdata itemprop: [Here](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/itemprop)
+Microdata from Schema: [Here](http://schema.org/docs/gs.html)
+Google Rich Snippets: [Here](https://developers.google.com/search/docs/guides/mark-up-content)
+Rich Snippets tester: [Here](https://search.google.com/test/rich-results)
 
 The `<big>` element has been discarded in HTML5 however the `<small>` tag is still used and has been adapted to represent small print. Example: small writing on the bottom of a contract.
 
@@ -98,3 +101,5 @@ Another microformat is hCalendar which is used for providing metadata to events.
 Another common method used to annotate sematic tags is microdata. The major difference between the two is microdata introduces new attributes into markup and does not use class attributes like microformatiing does. More information [here](https://www.w3.org/TR/microdata/)
 
 When starting a new sematic area on content with microdata the first attribute that must be used is `itemscope` which declares that you are creating a sematic section of code. The second attribute that must be used is `itemtype` which specifys the type of data being encoded. It is a unique attribute that must contain the url of the vocabulary that is being used to define the `itemprop`. More can be read [here](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/itemtype).The final attribute needed is known as `itemprop`. This is where the important information of your sematic code is stored. I would write my own markup to represent the structure of microdata but feel as if a better example can be found [here](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/itemprop).
+
+### RDFA
