@@ -8,18 +8,18 @@ Browser Support: [Here](https://caniuse.com/)
 Browser Statistics: [Here](http://gs.statcounter.com/)  
 Feature Support: [Here](https://modernizr.com/)  
 Web Accessibility Initiative: [Here](https://www.w3.org/WAI/)  
-HTML5 Outliner: [Here](https://gsnedders.html5.org/outliner/)
-Landmark Roles: [Here](https://www.w3.org/TR/2017/NOTE-wai-aria-practices-1.1-20171214/examples/landmarks/index.html)
+HTML5 Outliner: [Here](https://gsnedders.html5.org/outliner/)  
+Landmark Roles: [Here](https://www.w3.org/TR/2017/NOTE-wai-aria-practices-1.1-20171214/examples/landmarks/index.html)  
 Microformatting: [Here](http://microformats.org/wiki/what-are-microformats)  
 hCard Microformatting: [Here](http://microformats.org/wiki/hcard)  
 hCalendar Formatting: [Here](http://microformats.org/wiki/hcalendar)  
 Microdata: [Here](https://www.w3.org/TR/microdata/)  
-Microdata itemtype: [Here](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/itemtype)
-Microdata itemprop: [Here](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/itemprop)
+Microdata itemtype: [Here](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/itemtype)  
+Microdata itemprop: [Here](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/itemprop)  
 Microdata from Schema: [Here](http://schema.org/docs/gs.html)  
 Google Rich Snippets: [Here](https://developers.google.com/search/docs/guides/mark-up-content)  
-Rich Snippets tester: [Here](https://search.google.com/test/rich-results)
-
+Rich Snippets tester: [Here](https://search.google.com/test/rich-results)  
+Regular Expression: [Here](https://www.w3schools.com/jsref/jsref_obj_regexp.asp)  
 The `<big>` element has been discarded in HTML5 however the `<small>` tag is still used and has been adapted to represent small print. Example: small writing on the bottom of a contract.
 
 In HTML5 the meaning of the `<hr>` tag has changed. It now represents a break in subjects and is used when transitioning from one subject to another.
@@ -55,7 +55,7 @@ Your website should only contain **1 `<h1>` tag**. It makes your site more acces
 
 ## Meaningful Sematic Tags
 
-#### The &gt;time&lt; tag
+#### The &lt;time&gt; tag
 
 The `<time>` tag is extremely useful because it allows programs like search engines to extract data from your website. It has two uses to provide you where a date/time is being used in your markup and provides a easy way for programs to extract date/time values from your markup.
 
@@ -104,6 +104,8 @@ When starting a new sematic area on content with microdata the first attribute t
 
 ### RDFA
 
+### JSON-Ld
+
 ## Forms
 
 ### Basics
@@ -132,4 +134,24 @@ If we have a input box that the user **must** provide info for we provide it wit
 
 ### CSS Styling for Validation
 
-In the previous section we were introduced the required attribute. This section will introduce a few new attributes to you.
+In the previous section we were introduced the required attribute. This section will introduce a few new attributes to you. `valid` and `invalid` which apply styles to elements if they contain mistakes. However the HTML form does not actually know there is a mistake until the submit button is hit. An example of CSS styling form elements is.
+`input:required {`  
+ `background-color: yellow;`  
+`}`
+We can also style items after the submit button has been hit on a invalid item like..
+`input:required:invalid {`  
+ `background-color: yellow;`  
+`}`
+
+### Regular Expressions
+
+A regular expression is a pattern written in the regular expression language. The regular expression language can do things like make sure an email contains the @ symbol or that a postal code follows the correct sequence of digits and numbers. Check out this example below..
+
+`[0-9]{3}-[A-Z]{3}`
+
+What does this expression mean? The square brackets `[0-9]` only accepts digits ranging from 0-9 the `{3}` means that 3 digits between 0-9 are required. The `[A-Z]` means only capital letters from A-Z are acceptable and the `{3}` means there must be 3 of them.
+
+`587-ADC` -- This would be an acceptable combo
+`587-Adc` -- This would not be
+
+More information on regular expressions [here](https://www.w3schools.com/jsref/jsref_obj_regexp.asp)
